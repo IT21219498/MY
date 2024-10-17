@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            Registration for exams
+        </title>
+        <link rel="stylesheet" href="userRegister.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <script type="text/javascript">
+                            function enableButton()
+                {
+                    if(getElementById("checkbox").cheked)
+                    {
+                        getElementById("submitbtn").disbled=false;
+                    }
+                    else
+                    getElementById("submitbtn").disabled=true;
+                }
+        </script>
+    </head>
+    <body>
+        <div class = "container2">
+            <div class = "container">
+            
+                <h3 class = "title">Registrartion for Exam</h3><div/><br/><br/>
+                
+                <form action="submitRegisterExam.php" onSubmit="return matchPassword()" method="POST">
+                
+                    <div class="reg-details">
+                
+                
+                    <div class="eType">	
+                    <span class="details">Select employee type:*</span><br/>
+                    <input type="radio" name="eType" value="existing"checked> Existing 
+                    <input type="radio" name="eType" value="new">New <br/><br/>
+                    </div>
+                
+                
+                
+                    <div class="input-box">	
+                        <span class="details">Select exam:*</span><br/>
+                        <select id="exam" name="exam" placeholder="Select exam">
+                        <option value="IT">IT exam</option>
+                        <option value="finance">Finacial exam</option>
+                        <option value="management">Management exam</option>
+                        <option value="management">Entry level exam</option>
+                         </select><br/><br/>
+                    </div>
+                
+                     <div class="input-box">	
+                    <span class="details">Input employee ID:*</span><br/>
+                    <input type="text" name="eID"  placeholder="Employee ID" required> <br><br/>
+                    </div>
+                
+                    
+                    <div class="input-box">	
+                    <span class="details">E-mail:</span><br/>
+                    <input type="email" name="email" placeholder="abc@gmail.com" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,3}" required> <br><br/>
+                    </div>
+                
+                    
+                
+                    <div class="check-box">	
+                    
+                    <input class="inputStyle" id="checkBox" type="checkbox" onclick="enableButton()" disable>I agree with terms and conditions<br/><br/>
+                    <span class="details"></span>
+                    </div>
+
+                    <div class="pay">
+                            
+                            <label for="fname">Payment Accepted Cards</label>
+                            <div class="icon-container">
+                              <i class="fa fa-cc-visa" style="color:navy;"></i>
+                              <i class="fa fa-cc-amex" style="color:blue;"></i>
+                              <i class="fa fa-cc-mastercard" style="color:red;"></i>
+                              <i class="fa fa-cc-discover" style="color:orange;"></i>
+                            </div>   
+                
+                    
+                    
+                </div>
+                <div class="button">
+                    <center><input type="submit" id="submitBtn" value="Register" ></center>
+                </div>
+                
+                </form> 
+                
+            </div>
+        </div>
+    
+    </body>
+</html>

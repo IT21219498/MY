@@ -1,0 +1,135 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+body{
+	
+	/*background:linear-gradient(135deg,#71b7e6,#9b59b6);*/
+}
+.container2{
+	display:flex;
+	justify-content:center;
+	align-items:center;
+	padding-top:20px;
+	padding-bottom:20px;
+	background-image: url("Images/background.jpg");
+	width: 100%;
+	
+
+}
+.container{
+max-width: 700px;
+width: 100%;
+background: #fff;
+padding:25px 30px  ;
+padding-top: 40px;
+border-radius:8px;
+}	
+
+.container .title{
+	font-size: 25px;
+	font-weight: 1000;
+	position: relative;
+}
+
+.container .title::before{
+	content: '';
+	position: absolute;
+	left: 0;
+	bottom: 0;
+	height: 3px;
+	width: 220px;
+	background:#71b7e6;
+}
+
+.container form .user-details{
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	margin: 20px 0 12px 0;
+
+}
+
+
+form .reg-details .input-box{
+	margin-bottom:15px;
+	width:calc(100% /2 - 20px);
+}
+form .reg-details .eType{
+	margin-bottom:15px;
+	width:calc(100% /2 - 20px);
+}
+
+.reg-details .input-box .details{
+	display: block;
+	font-weight: 500;
+	margin-bottom: 5px;
+}
+
+.reg-details .eType .details{
+	display: block;
+	font-weight: 500;
+	margin-bottom: 5px;
+}
+
+.reg-details .input-box input{
+	 height: 45px;
+	 width: 100%;
+	 outline: none;
+	 border-radius: 5px;
+	 border: 1px solid #ccc;
+	 padding-left: 15px;
+	 font-size: 16px;
+	 border-bottom-width: 2px;
+	 transition: all 0.3s ease;
+}
+
+
+.reg-details .input-box textarea{
+	height: 45px;
+	width: 100%;
+	outline: none;
+	border-radius: 10px;
+	border: 1px solid #ccc;
+	padding-left: 15px;
+	font-size: 16px;
+	border-bottom-width: 2px;
+	
+}
+
+
+.reg-details .input-box textarea{
+	height: 45px;
+	width: 100%;
+	outline: none;
+	border-radius: 10px;
+	border: 1px solid #ccc;
+	padding-left: 15px;
+	font-size: 16px;
+	border-bottom-width: 2px;
+	
+}
+.reg-details .input-box input:focus,
+.reg-details .input-box input:valid{
+	border-bottom-color: #9b59b6;
+}
+
+form .button input{
+
+	height: 100%;
+	width: 25%;
+	outline:#D3D3D3;
+	color: #fff;
+	border-radius: 8px;
+	border: 2px solid #0087bd;
+	font-size: 18px;
+	font-weight: 800;
+	border-spacing: 1px;
+	letter-spacing: 1px;
+	background:#71b7e6;
+
+}

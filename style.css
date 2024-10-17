@@ -1,0 +1,75 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600&display=swap');
+*{
+    margin: 0;
+    p,adding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+.container{
+	max-width: 700px;
+	width: 100%;
+	background: #fff;
+	padding:25px 30px  ;
+	padding-top: 40px;
+	border-radius:8px;
+	}	
+	
+	.container2{
+		display:flex;
+		justify-content:center;
+		align-items:center;
+		padding-top:20px;
+		padding-bottom:20px;
+		background-image: url("Images/background.jpg");
+		width: 100%;
+		
+	
+	}
+	
+	.container .title{
+		font-size: 25px;
+		font-weight: 1000;
+		position: relative;
+	}
+	
+	.container .title::before{
+		content: '';
+		position: absolute;
+		left: 0;
+		bottom: 0;
+		height: 3px;
+		width: 220px;
+		background:#a5c253;
+	}
+
+
+#searchbar{
+	margin-left: 15%;
+	padding:15px;
+	border-radius: 10px;
+}
+
+input[type=text] {
+	width: 30%;
+	-webkit-transition: width 0.15s ease-in-out;
+	transition: width 0.15s ease-in-out;
+}
+
+/* When the input field gets focus,
+		change its width to 100% */
+input[type=text]:focus {
+	width: 70%;
+}
+
+#list{
+	font-size: 1.5em;
+	margin-left: 90px;
+}
+
+.Courses{
+display: list-item;	
+}
+
+
+
